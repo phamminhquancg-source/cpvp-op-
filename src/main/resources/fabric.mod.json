@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "cpvpoptimizer",
+	"version": "${version}",
+	"name": "CPvP Optimizer",
+	"description": "Client-side crystal PvP latency optimizer.",
+	"authors": ["You"],
+	"license": "CC0-1.0",
+	"icon": "assets/cpvpoptimizer/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.example.cpvpopt.CpvpOptimizerClient"]
+	},
+	"mixins": [
+		{
+			"config": "cpvpoptimizer.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
